@@ -283,6 +283,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\BallBehaviour.cs" />
+    <Compile Include="Assets\Scripts\BrickBehaviour.cs" />
     <Compile Include="Assets\Scripts\HorizontalAutoMovimentBehaviour.cs" />
     <Compile Include="Assets\Scripts\PaddleBehaviour.cs" />
   </ItemGroup>
