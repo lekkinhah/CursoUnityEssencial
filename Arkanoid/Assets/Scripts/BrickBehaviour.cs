@@ -11,10 +11,18 @@ public class BrickBehaviour : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		hitNumbers =0
+        hitNumbers = 0;
 	}
 	
-	void OnCollisionExit2D(){
-		
+	private void OnCollisionExit2D(){
+
+        GetComponent<Renderer>().material.color = damageColor[hitNumbers];
+        hitNumbers++;
+              
+        if (hitNumbers >= maxHits) {
+
+          Destroy(gameObject);
+        } 
+
 	}
 }
