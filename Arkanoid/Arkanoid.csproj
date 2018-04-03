@@ -286,8 +286,12 @@
     <Compile Include="Assets\Scripts\BallBehaviour.cs" />
     <Compile Include="Assets\Scripts\BrickBehaviour.cs" />
     <Compile Include="Assets\Scripts\BrickCrackBehaviour.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\GameOverBehaviour.cs" />
     <Compile Include="Assets\Scripts\HorizontalAutoMovimentBehaviour.cs" />
+    <Compile Include="Assets\Scripts\LoadMenuBehaviour.cs" />
     <Compile Include="Assets\Scripts\PaddleBehaviour.cs" />
+    <Compile Include="Assets\Scripts\SpecialItemBehaviour.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

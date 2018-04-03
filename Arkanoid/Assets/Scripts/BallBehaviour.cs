@@ -5,7 +5,7 @@ using UnityEngine;
 public class BallBehaviour : MonoBehaviour {
 
 	public float startSpeed;
-
+    public GameManager gameManager;
 
 	// Use this for initialization
 	void Start () {
@@ -31,14 +31,12 @@ public class BallBehaviour : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D collision){
 		Debug.Log (collision.collider.name);
+        gameManager.onBallHit(collision.collider);
 	}
 
 	void OnTriggerEnter2D(Collider2D other){
 		Debug.Log (other.name);
-
-		if(other.name == "Floor"){
-			Debug.Log ("GameOver");
-		}
+        gameManager.onBallHit(other);
 	}
 
     void StartBall() {
